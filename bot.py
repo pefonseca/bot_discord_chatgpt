@@ -1,7 +1,7 @@
 import discord
 import openai
 
-openai.api_key = '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'
+openai.api_key = "YOUR_OPEN_IA_KEY"
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -31,4 +31,4 @@ async def generate_response(user_input):
     )
     return response.choices[0].text.strip()
 
-client.run("MTEyNTUyMzE5NTIyNzc5OTcxNg.GpLc5W.sL2Yx3h0qdQCHa8dTfsNOEFVyh1uuvVBFCdKfs")
+client.run("YOUR_DISCORD_KEY")
