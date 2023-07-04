@@ -1,10 +1,7 @@
 import discord
 import openai
-from dotenv import load_dotenv
 
-load_dotenv
-
-openai.api_key = 'YOUR_API_KEY'
+openai.api_key = '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'
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -34,4 +31,4 @@ async def generate_response(user_input):
     )
     return response.choices[0].text.strip()
 
-client.run("YOUR_DISCORD_KEY")
+client.run("MTEyNTUyMzE5NTIyNzc5OTcxNg.GpLc5W.sL2Yx3h0qdQCHa8dTfsNOEFVyh1uuvVBFCdKfs")
